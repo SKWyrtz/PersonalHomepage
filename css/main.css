@@ -1,0 +1,16 @@
+body, .container{
+    background-color: #2c2c31;
+}
+
+p, h1, h2, h3, label {
+    color: white;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+#googleLabel {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
