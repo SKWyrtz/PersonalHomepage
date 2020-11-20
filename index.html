@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <div class="row justify-content-md-center">
-        <h1 id="time">TIME</h1>
+      <h1 id="time">TIME</h1>
     </div>
     <div class="row justify-content-md-center">
       <h2 id="date">DATE</h2>
@@ -25,22 +25,92 @@
 
     <div class="row justify-content-md-center">
       <div class="col col-lg-4">
-      <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-        <!--<input name="sitesearch" type="hidden" value="example.com"> -->
-        <div class="form-group-lg ">
-          <label id="googleLabel" for="googleInput">Google</label>
-          <input id="googleInput" class="form-control" autocomplete="on" class="form-control search" name="q"
-            placeholder="Search in example.com" required="required" type="text">
-        </div>
-        <button class="btn btn-secondary" type="submit">Search</button>
-      </form>
-    </div>
+        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+          <!--<input name="sitesearch" type="hidden" value="example.com"> -->
+          <div class="form-group-lg ">
+            <label id="googleLabel" for="googleInput">Google</label>
+            <input id="googleInput" class="form-control" autocomplete="on" class="form-control search" name="q"
+              placeholder="Search Google" required="required" type="text">
+          </div>
+          <button class="btn btn-secondary" type="submit">Search</button>
+        </form>
+      </div>
     </div>
 
-    <p class="csgo">
-      This is a paragraph.
-      Note that the text is automatically wrapped.
-    </p>
+    <div class="row justify-content-md-center">
+      <div id="redditContainer" class="col col-lg-6">
+        <h3>r/GlobalOffensive</h3>
+
+        <div class="row redditPosts">
+          <div class="col col-lg-1 upvotes">
+            <p id="up0">UPVOTES</p>
+          </div>
+          <div class="col col-lg-11 redditContent">
+            <div class="row">
+              <h4><a id="r0" href="somelink"></a></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row redditPosts">
+          <div class="col col-lg-1 upvotes">
+            <p id="up1">UPVOTES</p>
+          </div>
+          <div class="col col-lg-11 redditContent">
+            <div class="row">
+              <h4><a id="r1" href="somelink"></a></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row redditPosts">
+          <div class="col col-lg-1 upvotes">
+            <p id="up2">UPVOTES</p>
+          </div>
+          <div class="col col-lg-11 redditContent">
+            <div class="row">
+              <h4><a id="r2" href="somelink"></a></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row redditPosts">
+          <div class="col col-lg-1 upvotes">
+            <p id="up3">UPVOTES</p>
+          </div>
+          <div class="col col-lg-11 redditContent">
+            <div class="row">
+              <h4><a id="r3" href="somelink"></a></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row redditPosts">
+          <div class="col col-lg-1 upvotes">
+            <p id="up4">UPVOTES</p>
+          </div>
+          <div class="col col-lg-11 redditContent">
+            <div class="row">
+              <h4><a id="r4" href="somelink"></a></h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="hltvContainer" class="col col-lg-6">
+        <h3>HLTV.org</h3>
+
+        <div class="row matches">
+          <div class="matchdate">
+            <p>UPVOTES</p>
+          </div>
+          <div class="matchinfo">
+              <h4>haps</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 

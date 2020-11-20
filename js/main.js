@@ -1,4 +1,4 @@
-let csgo1 = document.querySelector(".csgo")
+
 let time = document.querySelector("#time")
 let date = document.querySelector("#date")
 
@@ -19,11 +19,24 @@ function setTime(){
 }
 
 async function fetchCSGO(){
-    await fetch('https://www.reddit.com/r/GlobalOffensive/top.json?limit=10')
+    await fetch('https://www.reddit.com/r/GlobalOffensive/top.json?limit=5')
   .then(response => response.json())
   .then(data => result = data);
-  console.table(result.data.children[0].data)
-  csgo1.innerHTML = result.data.children[0].data.title
+  console.log(result.data.children[0].data)
+
+  let i = 0;
+
+  result.data.children.forEach(element => {
+    let r1 = document.querySelector("#r" + i)
+    let upvotes = document.querySelector('#up' + i)
+
+    r1.innerHTML = element.data.title.slice(0, 100) + "..."
+    let postName = element.data.name.slice(3)
+    r1.href = "https://www.reddit.com/r/GlobalOffensive/comments/" + postName
+    upvotes.innerHTML = element.data.score
+    i++
+  });
+  
 
   //console.table(data.data.children[0].data.title)
 /*
